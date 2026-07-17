@@ -1,3 +1,2 @@
-alert(
-    "hello from java"
-)
+//alert(i am  java")
+console.log("hello from java")
