@@ -3,10 +3,10 @@ h1{
 }
 body{
     margin: 1px;
-    background-color:white;
+    background-color:lightskyblue;
 }
 .navbar{
-    background-color: beige;
+    background-color: bisque;
     border-style:solid;
     border-width:1px;
     border-color:blue;
@@ -17,13 +17,13 @@ body{
 .navbar a{
     padding:20px;
     text-decoration:none;
-    color:black;
+    color:darkslategray;
     font-size: 20px;
 
 }
 .navbar a:hover{
-    color:black;
-    background-color: aqua;
+    color:lightsteelblue;
+    background-color: midnightblue;
 }
 .card {
     text-align: center;
@@ -35,19 +35,21 @@ body{
     margin-top: 70px;
     overflow: hidden;
     padding-bottom: 20px;
-    background-color: white;
+    background-color: whitesmoke;
     margin-top: 80px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 .card img{
     width : 100%;
+    background-color: royalblue;
 }
 .card button{
     padding: 15px;
     width:80%;
     border-style: none;
     border-radius: 8px;
-    background-color: bisque;
+    background-color: coral;
+    color: white;
 }
 .card button:hover{
     color: bisque;

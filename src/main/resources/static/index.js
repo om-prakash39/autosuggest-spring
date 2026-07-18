@@ -1,13 +1,13 @@
 var users = [
     {
-        name: "john doe",
+        name: " Mahendra Singh Dhoni",
         gender: "MALE",
-        img: "john.png"
+        img: "mahi.WEBP"
     },
     {
-        name: "jane doe",
+        name: "Sakshi Singh Dhoni",
         gender: "FEMALE",
-        img: "jane.png"
+        img: "sakshi.PNG"
     }
 ];
 
