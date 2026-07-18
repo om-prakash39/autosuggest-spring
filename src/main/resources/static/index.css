@@ -3,17 +3,53 @@ h1{
 }
 body{
     margin: 1px;
+    background-color:white;
 }
 .navbar{
+    background-color: beige;
     border-style:solid;
     border-width:1px;
     border-color:blue;
     padding:20px;
     text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .navbar a{
     padding:20px;
     text-decoration:none;
     color:black;
+    font-size: 20px;
 
+}
+.navbar a:hover{
+    color:black;
+    background-color: aqua;
+}
+.card {
+    text-align: center;
+    border: 1px solid black;
+    width: 350px;
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    background-color: white;
+    margin-top: 80px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.card img{
+    width : 100%;
+}
+.card button{
+    padding: 15px;
+    width:80%;
+    border-style: none;
+    border-radius: 8px;
+    background-color: rgb(141, 250, 135);
+}
+.card button:hover{
+    color: bisque;
+    background-color: black;
 }
