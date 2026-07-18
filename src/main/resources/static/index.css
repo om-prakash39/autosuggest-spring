@@ -47,7 +47,7 @@ body{
     width:80%;
     border-style: none;
     border-radius: 8px;
-    background-color: rgb(141, 250, 135);
+    background-color: bisque;
 }
 .card button:hover{
     color: bisque;
