@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Being Infinity</title>
+
+<style>
+
+body{
+    text-align:center;
+    font-family:"Times New Roman", serif;
+}
+
+.box{
+    width: 700px;
+    margin:auto;
+    margin-top:50px;
+    padding:30px;
+    border:3px solid red;
+    border-radius:15px;
+    position:relative;
+}
+
+.gear-icon{
+    position:absolute;
+    top:15px;
+    left:15px;
+    font-size:22px;
+}
+
+.status{
+    position:absolute;
+    top:15px;
+    right:15px;
+    font-size:18px;
+}
+
+.being{
+    color:blue;
+}
+
+.infinity{
+    color:black;
+}
+
+.tagline{
+    color:gray;
+    font-size:22px;
+}
+
+input{
+    width:250px;
+    height:30px;
+}
+
+.footer{
+    margin-top:30px;
+    color:gray;
+}
+
+        .search-suggestions {
+            width: 80%;
+            margin: 8px 0 0;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+            overflow: hidden;
+            text-align: left;
+            margin: 0px auto;
+        }
+        .suggestion {
+            padding: 10px 14px;
+            border-bottom: 1px solid #f2f2f2;
+            font-size: 14px;
+        }
+
+
+
+</style>
+
+</head>
+
+<body>
+
+<div class="box">
+
+    <span class="gear-icon">&#9881;</span>
+
+    <span class="status">&#8226; online | &#128339; - ms</span>
+
+    <h1>
+        <span class="being">Being</span><span class="infinity">Infinity</span>
+    </h1>
+
+    <p class="tagline">
+        One million phrases. Four Algorithms. Prefix Based Auto Suggest.
+    </p>
+
+    <span>&#128269;</span>
+
+    <input type="text" placeholder="Start typing to search">
+    <div class="search-suggestions">
+        <!-- <div class="suggestion"> Cyber security </div>
+        <div class="suggestion"> Artificial Intelligence and Data Science </div> -->
+    </div>
+    <script>
+        function getSearchSuggestions(){
+            var searchbox = document.getElementsByClassName("searchbox");
+            var search-suggestions = document.getElementsbyclassname("searchsuggestios");
+            var userInput = searchbox.value;
+            if(<userInput.trim() ==="")return;
+            var URL 1 = "https://autosuggest-backend.onrender.com/api/autosuggest?q=ba&algorithm=brute&limit=10&weighted=false");
+            var URL 3 = "&algorithm=brute&limit=10&weighted=false";
+            var URL=URL1+userInput+URL3;
+            fetch(URL)
+            .then(function(response){
+                return response.json;
+
+            })
+            .then(function(data){
+                var searchresults="";
+                var suggestion=data.results;
+                for(var i=0;i<data.count;i++)
+            {
+                searchresults+="<div class='suggestions'>" + suggestions[i].text + "</div>";
+
+            }
+            searchsuggestions.innerHTML
+        })
+
+
+
+</body>
+</html>
