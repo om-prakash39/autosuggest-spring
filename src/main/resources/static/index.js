@@ -1,27 +1,40 @@
 var users = [
     {
-        "name" : "john doe",
-        "gender" : "MALE",
-        "img" : "john.png"
+        name: "john doe",
+        gender: "MALE",
+        img: "john.png"
     },
-    { 
-        "name" : "jane doe",
-        "gender" : "FEMALE",
-        "img" : "jane.png"
+    {
+        name: "jane doe",
+        gender: "FEMALE",
+        img: "jane.png"
     }
 ];
 
 var id = 0;
 
 function toggleuser() {
-    id = (id + 1) % users.length; // cycle through users
+    id = (id + 1) % users.length;
 
-    var userImage = document.getElementById("user-Image");
-    userImage.src = users[id].img; // use [] not ()
+    document.getElementById("user-Image").src = users[id].img;
+    document.getElementById("user-name").innerHTML = users[id].name;
+    document.getElementById("user-gender").innerHTML = users[id].gender;
+}
 
-    var username = document.getElementById("user-name");
-    username.innerHTML = users[id].name; // lowercase 'id'
+function randomuser() {
+    fetch("https://randomuser.me/api/")
+        .then(function(response) {
+            return response.json();
+        })
+        .then(function(data) {
+            var userData = data.results[0];
 
-    var usergender = document.getElementById("user-gender");
-    usergender.innerHTML = users[id].gender;
+            document.getElementById("user-Image").src = userData.picture.large;
+            document.getElementById("user-name").innerHTML =
+                userData.name.first + " " + userData.name.last;
+            document.getElementById("user-gender").innerHTML = userData.gender;
+        })
+        .catch(function(err) {
+            console.error(err);
+        });
 }
